@@ -6,11 +6,24 @@
     */
 
     //ENTRADA
+    const numeroInicial = Number(prompt("diga um numero inicial"));
+    const numeroFinal = Number(prompt("diga umm numero final"));
 
-
+    let listaPares = [];
+    let listaImpares = [];
     //PROCESSAMENTO
+    if (numeroInicial < numeroFinal) {
+        for (contador = numeroInicial; contador <= numeroFinal; contador++) {
+            if (contador 2 % === 0) {
+                listaPares.push(contador);
+            } else {
+                listaImpares.push(contador);
+            }
 
-
-    //SAÍDA
-
+        }
+        document.write(`os numeros entre ${numeroInicial} e ${numeroFinal} que sao pares sao : ${listaPares}`);
+    }
+    else {
+        document.write("ERRO!O numero inicial tem que ser menor que o numero final.");
+    }
 </script>
